@@ -1,4 +1,4 @@
-## Reprodubicle builds with Maven
+## Reproducible builds with Maven
 From what I can tell there has been ongoing work to add support for reproducible builds in Maven for quite some time. Somehwere in Q4 2019 the support was considered good enough that documentation was added. See https://maven.apache.org/guides/mini/guide-reproducible-builds.html.
 
 
@@ -9,7 +9,7 @@ public static void main(String[] args) {
 }
 ```
 
-Package the application as an executable. Note that support for reproducible builds is implemented at the plugin level. You are free to whatever version of Maven you have installed but need to ensure that the plugins used by the project are recent enough to support reproducible builds. For the maven-jar-plugin this support was added in 3.2.0.
+Package the application as an executable. Note that support for reproducible builds is implemented at the plugin level. You are free to use whatever version of Maven you have installed but need to ensure that the plugins used by the project are recent enough to support reproducible builds. For the maven-jar-plugin this support was added in 3.2.0.
 ```XML
 <plugin>
     <groupId>org.apache.maven.plugins</groupId>
